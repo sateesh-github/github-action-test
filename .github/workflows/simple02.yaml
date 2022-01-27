@@ -5,6 +5,11 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: display ls value
-        run: ls -ltr
+        run: pwd
       - name: display value
-        run: touch file1 file2
+        run: less /etc/passwd
+      - name: python commands
+        run: |
+        import math as m
+        print(m.add(10,20))
+        shell: python
