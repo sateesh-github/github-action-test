@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: display ls value
+<<<<<<< HEAD
         run: pwd
       - name: display value
         run: less /etc/passwd
@@ -13,3 +14,8 @@ jobs:
         import math as m
         print(m.add(10,20))
         shell: python
+=======
+        run: lsa -ltr
+      - name: display value
+        run: touch12 file1 file2
+>>>>>>> a1b491cf4fdce599c576793e64832a997140116a
