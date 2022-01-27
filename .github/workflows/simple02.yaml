@@ -10,6 +10,6 @@ jobs:
         run: less /etc/passwd
       - name: python commands
         run: |
-        import platform
-        print(platform.processor())
+          import platform
+          print(platform.processor())
         shell: python
