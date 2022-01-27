@@ -13,3 +13,12 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+  run-windows-commands:
+    runs-on: windows-latest
+    needs: [run-simple02]
+    steps:
+      - name: Directory powershell
+        run: Get-Location
+      - name: Directory Bash
+        run: pwd
+        shell: bash
