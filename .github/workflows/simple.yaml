@@ -8,5 +8,5 @@ jobs:
         run: echo "hello world"
       - name: multiline script
         run: |
-          docker version
-          kubectl version
+          node -v
+          npm -v
