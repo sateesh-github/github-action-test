@@ -2,7 +2,7 @@ name: second poc file on git runner
 on: [push]
 jobs:
   run-simple02:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu:20.04
     steps:
       - name: display ls value
         run: ls -ltr
