@@ -16,7 +16,7 @@ jobs:
           ls -a
       - name: simple js actions
         id: greet
-        uses: sateesh-github/hello-world-javascript-action@main
+        uses: sateesh-github/hello-world-javascript-action@a8e3facf8b0244f258e570da1e2e418da841ad1f
         with:
           who-to-greet: sateesh
       - name: Log greeting toTimeString
