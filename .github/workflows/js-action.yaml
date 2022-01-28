@@ -4,10 +4,20 @@ jobs:
   hello-world-js-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: list the files befor check out the code
+        run: |
+          pwd
+          ls -a
+      - name: checkout the code from git hub repo
+        uses: /sateesh-github/MavenProject@dc546d721b853d0fe9a98d006d5aab6d90ee93da
+      - name: list the files after check out the code
+        run: |
+          pwd
+          ls -a
       - name: simple js actions
         id: greet
         uses: sateesh-github/hello-world-javascript-action@main
         with:
           who-to-greet: sateesh
       - name: Log greeting toTimeString
-        run: echo "${{steps.greet.outputs.time}}"
+        run: echo "{{steps.greet.outputs.time}}"
