@@ -9,7 +9,7 @@ jobs:
           pwd
           ls -a
       - name: checkout the code from git hub repo
-        uses: /sateesh-github/MavenProject@dc546d721b853d0fe9a98d006d5aab6d90ee93da
+        uses: sateesh-github/MavenProject@dc546d721b853d0fe9a98d006d5aab6d90ee93da
       - name: list the files after check out the code
         run: |
           pwd
